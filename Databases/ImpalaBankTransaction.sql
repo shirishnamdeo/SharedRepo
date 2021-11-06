@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS bank_transaction;
 CREATE EXTERNAL TABLE bank_transaction (
-    date          STRING,
+    txn_date      STRING,
     description   STRING,
     deposits      STRING,
     withdrawls    STRING,
