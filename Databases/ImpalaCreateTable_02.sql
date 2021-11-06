@@ -1,0 +1,43 @@
+DROP TABLE IF EXISTS employee;
+CREATE EXTERNAL TABLE employee (
+    'emp_id'                  STRING,
+    'name_prefix'             STRING,
+    'first_name'              STRING,
+    'middle_initial'          STRING,
+    'last_name'               STRING,
+    'gender'                  STRING,
+    'e_mail'                  STRING,
+    'fathers_name'            STRING,
+    'mothers_name'            STRING,
+    'mothers_maiden_name'     STRING,
+    'date_of_birth'           STRING,
+    'time_of_birth'           STRING,
+    'age_in_yrs.'             STRING,
+    'weight_in_kgs.'          STRING,
+    'date_of_joining'         STRING,
+    'quarter_of_joining'      STRING,
+    'half_of_joining'         STRING,
+    'year_of_joining'         STRING,
+    'month_of_joining'        STRING,
+    'month_name_of_joining'   STRING,
+    'short_month'             STRING,
+    'day_of_joining'          STRING,
+    'dow_of_joining'          STRING,
+    'short_dow'               STRING,
+    'age_in_company_(years)'  STRING,
+    'salary'                  STRING,
+    'last_%_hike'             STRING,
+    'ssn'                     STRING,
+    'phone_no._'              STRING,
+    'place_name'              STRING,
+    'county'                  STRING,
+    'city'                    STRING,
+    'state'                   STRING,
+    'zip'                     STRING,
+    'region'                  STRING,
+    'user_name'               STRING,
+    'password'                STRING
+)
+COMMENT 'Employee Data'
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE
+TBLPROPERTIES("skip.header.line.count"="1");
