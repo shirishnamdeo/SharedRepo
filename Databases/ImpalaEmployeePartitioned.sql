@@ -40,7 +40,7 @@ CREATE EXTERNAL TABLE employee_partitioned (
 )
 PARTITIONED BY (
     region      STRING, 
-    state       STRING 
+    city        STRING 
 )
 COMMENT 'Employee PARTITIONED TABLE'
 ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE
