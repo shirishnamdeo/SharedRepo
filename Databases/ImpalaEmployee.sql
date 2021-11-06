@@ -12,8 +12,8 @@ CREATE EXTERNAL TABLE employee (
     mothers_maiden_name     STRING    COMMENT 'Dummy Comment',
     date_of_birth           STRING    COMMENT 'Dummy Comment',
     time_of_birth           STRING    COMMENT 'Dummy Comment',
-    age_in_yrs.             STRING    COMMENT 'Dummy Comment',
-    weight_in_kgs.          STRING    COMMENT 'Dummy Comment',
+    age_in_yrs              STRING    COMMENT 'Dummy Comment',
+    weight_in_kgs           STRING    COMMENT 'Dummy Comment',
     date_of_joining         STRING    COMMENT 'Dummy Comment',
     quarter_of_joining      STRING    COMMENT 'Dummy Comment',
     half_of_joining         STRING    COMMENT 'Dummy Comment',
@@ -24,9 +24,9 @@ CREATE EXTERNAL TABLE employee (
     day_of_joining          STRING    COMMENT 'Dummy Comment',
     dow_of_joining          STRING    COMMENT 'Dummy Comment',
     short_dow               STRING    COMMENT 'Dummy Comment',
-    age_in_company_(years)  STRING    COMMENT 'Dummy Comment',
+    age_in_company_years    STRING    COMMENT 'Dummy Comment',
     salary                  STRING    COMMENT 'Dummy Comment',
-    last_%_hike             STRING    COMMENT 'Dummy Comment',
+    last_percentage_hike    STRING    COMMENT 'Dummy Comment',
     ssn                     STRING    COMMENT 'Dummy Comment',
     phone_no                STRING    COMMENT 'Dummy Comment',
     place_name              STRING    COMMENT 'Dummy Comment',
@@ -41,42 +41,3 @@ CREATE EXTERNAL TABLE employee (
 COMMENT 'Employee Data'
 ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE
 TBLPROPERTIES("skip.header.line.count"="1");
-
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
